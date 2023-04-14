@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="my.compary.psixol">
+
+    <class name="StarShip" table="starship">
+        <meta attribute="class-description">
+            This class contains the user detail.
+        </meta>
+
+
+        <id name="id" type="java.lang.Long" column="id">
+<generator class="native"></generator>
+        </id>
+
+
+
+        <property name="name" column="name" type="java.lang.String"/>
+        <property name="campacity" column="campacity" type="integer"/>
+        <property name="length" column="length" type="java.lang.Double"/>
+        <property name="width" column="width" type="java.lang.Double"/>
+        <property name="height" column="height" type="java.lang.Double"/>
+
+        <property name="starShipType" column="starShipType" type="string"/>
+
+
+    </class>
+</hibernate-mapping>
